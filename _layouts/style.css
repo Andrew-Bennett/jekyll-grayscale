@@ -1,0 +1,16 @@
+{% include css/bootstrap.min.css %}
+{% include css/grayscale.css %}
+
+hr {
+    margin: 40px auto;
+}
+
+img, pre {
+    border-radius: 4px;
+    max-width: 100%;
+}
+
+.bigger-image {
+    min-width: 130%;
+    margin: 5rem 0 5rem -15%;
+}

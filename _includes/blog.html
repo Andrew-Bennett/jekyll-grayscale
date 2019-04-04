@@ -1,0 +1,24 @@
+<section id="blog" class="container content-section text-center">
+    <h2>Latest Posts</h2>
+    {% if site.posts.size == 0 %}
+        <p class="text-center">Nothing published yet!</p>
+    {% elsif site.paginate %}
+        {% for post in paginator.posts %}
+            {% if post.category == 'blog' %}
+                {% if post.hidden != true %}
+                    {% include blog-post.html %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+
+        {% include pagination.html%}
+    {% else %}
+        {% for post in site.posts %}
+            {% if post.category == 'blog' %}
+                {% if post.hidden != true %}
+                    {% include blog-post.html %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</section>
