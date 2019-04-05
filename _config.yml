@@ -12,6 +12,9 @@ color:
 # Footer settings
 footer: Your Website
 
+# To enable google analytics, supply your token below
+# analytics-google: 'UA-MYANALYTICS'
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
